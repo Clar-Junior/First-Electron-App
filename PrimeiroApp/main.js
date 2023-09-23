@@ -38,7 +38,7 @@ app.whenReady().then(() => {
     })
 })
 
-// se todas as janela do app estiverem fechadas, encerrao o app, exceto macOS.
+// se todas as janela do app estiverem fechadas, encerra o app, exceto macOS.
 app.on('window-all-closed', () => {
     if(process.platform !== 'darwin') app.quit()
 })
